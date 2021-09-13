@@ -1,0 +1,44 @@
+.genre-select-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.select {
+    border: none;
+    color: #ffffff;
+    background-color: rgba(96, 96, 96, 0.63);
+    width: 20rem;
+    height: 2rem;
+    border-radius: .25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0 1rem;
+}
+
+.select span {
+    color: #F65261;
+}
+
+.select:hover {
+    cursor: pointer;
+    background-color: rgba(96, 96, 96, 0.93);
+}
+
+.genre-container {
+    background-color: rgba(50, 50, 50, 0.8);
+    width: 20rem;
+}
+
+.checkbox {
+    margin: 1rem .5rem;
+}
+
+.checkbox > label {
+    margin-left: .5rem;
+}
