@@ -1,0 +1,25 @@
+.search-input {
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: .25rem;
+    width: 60%;
+    border: none;
+    background-color: rgba(50, 50, 50, 0.8);
+    color: white;
+    padding-left: .5rem;
+}
+
+.search-input:focus {
+    outline: 1px solid #F65261;
+}
+
+.search-container {
+    display: flex;
+    margin: 0 auto;
+    width: 60%;
+    justify-content: center;
+    background-color: rgba(96, 96, 96, 0.63);
+    border-radius: .5rem;
+    padding: 1rem 1rem;
+}  
+ 

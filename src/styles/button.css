@@ -1,0 +1,24 @@
+.btn {
+    height: 2rem;
+    font-size: 1.5rem;
+    background-color: #F65261;
+    color: #FFFFFF;
+    border-radius: .25rem;
+    border: none;
+    margin-left: .25rem;
+    margin-right: .25rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #a72d38;
+    
+}
+
+.btn-md {
+    width: 6rem;
+}
+
+.btn-lg {
+    width: 10rem;
+}
