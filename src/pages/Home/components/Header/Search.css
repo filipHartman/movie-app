@@ -1,0 +1,31 @@
+.searchContainer {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.searchContainer > h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+.searchInput {
+    display: inline-block;
+    font-size: 2rem;
+    border-radius: .25rem;
+    width: 100%;
+    border: none;
+    background-color: rgba(50, 50, 50, 0.8);
+    color: white;
+    padding-left: .5rem;
+}
+
+.searchInput:focus {
+    outline: 1px solid #F65261;
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: center;
+}  
+ 

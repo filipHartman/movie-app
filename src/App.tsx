@@ -1,8 +1,13 @@
 import './App.css';
-import { Task1 } from './task-1/Task1';
+import { HomePage } from './pages/Home/Home';
+import ErrorBoundary from './shared/Error/ErrorBoundary';
 
 function App() {
-  return <Task1 />;
+  return (
+    <ErrorBoundary>
+      <HomePage />
+    </ErrorBoundary>
+  );
 }
 
 export default App;
