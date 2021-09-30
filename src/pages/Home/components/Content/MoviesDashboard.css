@@ -1,0 +1,45 @@
+.moviesDashboardContainer {
+    margin-top: 3rem;
+}
+
+.moviesDashboard {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 480px;
+    margin: 0 2rem;
+
+}
+
+.cardImage {
+    background-color: #555555;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardFooter {
+    margin-top: 1rem;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date {
+    padding: 2px 8px;
+    border: 1px solid #555555;
+    border-radius: 4px;
+}
+
+.description {
+    font-size: .875rem;
+    opacity: .5;
+}

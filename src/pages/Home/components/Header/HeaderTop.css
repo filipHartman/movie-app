@@ -1,0 +1,27 @@
+.headerTopContainer {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: rgba(246, 82, 97, 1);    
+}
+
+.headerTopContainer > h1 {
+    font-weight: 300;
+}
+
+.headerTopContainer > h1 > span {
+    font-weight: 600;
+}
+
+.headerTopContainer > button {
+    margin-left: auto;
+    border: none;
+    padding: .75rem 1.5rem;
+    background-color: rgba(96, 96, 96, 0.68);
+    color: rgba(246, 82, 97, 1);
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
