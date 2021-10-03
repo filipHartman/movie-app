@@ -1,19 +1,75 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { AddMovieModalContent } from '../../../../shared/components/AddMovieModalContent';
+import { DeleteModalContent } from '../../../../shared/components/DeleteModalContent';
+import { ModalButton } from '../../../../shared/components/ModalButton';
 import { MovieData } from '../../../../shared/interfaces';
 import './MoviesDashboard.css';
 
-export const MovieCard = (props: { movie: MovieData }) => (
-  <div className='card'>
-    <div className='cardImage'>{props.movie.imageUrl}</div>
-    <div className='cardFooter'>
-      <div className='titleContainer'>
-        <span>{props.movie.title}</span>
-        <span className='date'>{props.movie.releaseDate}</span>
-      </div>
-      <span className='description'>{props.movie.description}</span>
+const CardOptions = () => {
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
+  const [showEditModal, setShowEditModal] = useState(false);
+  return (
+    <div className='optionsContainer'>
+      <ModalButton
+        buttonLabel='Edit'
+        className='option'
+        showModal={showEditModal}
+        modalTitle='Edit movie'
+        openModal={() => setShowEditModal(true)}
+        close={() => setShowEditModal(false)}
+        modalContentRender={() => (
+          <AddMovieModalContent close={() => setShowEditModal(false)} />
+        )}
+      />
+      <ModalButton
+        buttonLabel='Delete'
+        className='option'
+        showModal={showDeleteModal}
+        modalTitle='Delete movie'
+        openModal={() => setShowDeleteModal(true)}
+        close={() => setShowDeleteModal(false)}
+        modalContentRender={() => (
+          <DeleteModalContent close={() => setShowDeleteModal(false)} />
+        )}
+      />
     </div>
-  </div>
-);
+  );
+};
+
+export const MovieCard = (props: { movie: MovieData }) => {
+  const [hover, setHover] = useState(false);
+  const [showOptions, setShowOptions] = useState(false);
+
+  return (
+    <div
+      className='card'
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => {
+        setHover(false);
+        setShowOptions(false);
+      }}
+    >
+      {hover ? (
+        showOptions ? (
+          <CardOptions />
+        ) : (
+          <button
+            className='hoverBtn'
+            onClick={() => setShowOptions(true)}
+          ></button>
+        )
+      ) : null}
+      <div className='cardImage'>{props.movie.imageUrl}</div>
+      <div className='cardFooter'>
+        <div className='titleContainer'>
+          <span>{props.movie.title}</span>
+          <span className='date'>{props.movie.releaseDate}</span>
+        </div>
+        <span className='description'>{props.movie.description}</span>
+      </div>
+    </div>
+  );
+};
 
 export class MoviesDashboard extends React.Component {
   movies: MovieData[] = [
