@@ -14,7 +14,7 @@
     font-weight: 600;
 }
 
-.headerTopContainer > button {
+.addMovieBtn {
     margin-left: auto;
     border: none;
     padding: .75rem 1.5rem;
@@ -24,4 +24,9 @@
     font-size: 1.25rem;
     text-align: center;
     line-height: 1.5rem;
+    cursor: pointer;
+}
+
+.addMovieBtn:hover {
+    background-color: rgba(145, 145, 145, 0.68);
 }
