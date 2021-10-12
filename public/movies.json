@@ -1,0 +1,56 @@
+[
+  {
+    "id": "movie-1",
+    "title": "Pulp Fiction",
+    "imageUrl": "Pulp Fiction",
+    "releaseDate": 1992,
+    "description": "Action & Adventure",
+    "rating": 5.2,
+    "length": 123
+  },
+  {
+    "id": "movie-2",
+    "title": "Bohemian Rhapsody",
+    "imageUrl": "Bohemian Rhapsody",
+    "releaseDate": 1992,
+    "description": "Drama, Biography, Music",
+    "rating": 5.2,
+    "length": 123
+  },
+  {
+    "id": "movie-3",
+    "title": "Avengers: Infinity War",
+    "imageUrl": "Avengers: Infinity War",
+    "releaseDate": 1992,
+    "description": "Action & Adventure",
+    "rating": 5.2,
+    "length": 123
+  },
+  {
+    "id": "movie-4",
+    "title": "Pulp Fiction",
+    "imageUrl": "Pulp Fiction",
+    "releaseDate": 1992,
+    "description": "Action & Adventure",
+    "rating": 5.2,
+    "length": 123
+  },
+  {
+    "id": "movie-5",
+    "title": "Bohemian Rhapsody",
+    "imageUrl": "Bohemian Rhapsody",
+    "releaseDate": 1992,
+    "description": "Drama, Biography, Music",
+    "rating": 5.2,
+    "length": 123
+  },
+  {
+    "id": "movie-6",
+    "title": "Avengers: Infinity War",
+    "imageUrl": "Avengers: Infinity War",
+    "releaseDate": 1992,
+    "description": "Action & Adventure",
+    "rating": 5.2,
+    "length": 123
+  }
+]

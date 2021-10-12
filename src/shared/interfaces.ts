@@ -4,6 +4,8 @@ export interface MovieData {
   releaseDate: number;
   imageUrl: string;
   description: string;
+  rating: number;
+  length: number;
 }
 
 export enum Genre {
