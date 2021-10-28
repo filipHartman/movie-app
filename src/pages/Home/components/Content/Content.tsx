@@ -2,14 +2,17 @@ import React from 'react';
 import { FilterBar } from './FilterBar';
 import { MoviesDashboard } from './MoviesDashboard';
 import './Content.css';
+import { MovieData } from '../../../../shared/interfaces';
 
-export class Content extends React.Component {
-  render() {
-    return (
-      <main>
-        <FilterBar />
-        <MoviesDashboard />
-      </main>
-    );
-  }
+interface Props {
+  addCurrentMovie: (movie: MovieData) => void;
 }
+
+export const Content = (props: Props) => {
+  return (
+    <main>
+      <FilterBar />
+      <MoviesDashboard addCurrentMovie={props.addCurrentMovie} />
+    </main>
+  );
+};

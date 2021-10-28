@@ -1,0 +1,33 @@
+.detailContainer {
+    display: flex;
+    margin: 0 auto;
+    width: 80%; 
+}
+
+.image {
+    background-color: #555555;
+    height: 340px;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.movieInfoContainer {
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.timeInfo {
+    display: flex;
+}
+
+.length {
+    margin-left: 2rem;
+}
