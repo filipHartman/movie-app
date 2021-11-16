@@ -1,11 +1,10 @@
-import React from 'react';
-import { FilterBar } from './FilterBar';
-import { MoviesDashboard } from './MoviesDashboard';
+import FilterBar from './FilterBar';
+import MoviesDashboard from './MoviesDashboard';
 import './Content.css';
-import { MovieData } from '../../../../shared/interfaces';
+import { Movie } from '../../../../shared/interfaces';
 
 interface Props {
-  addCurrentMovie: (movie: MovieData) => void;
+  addCurrentMovie: (movie: Movie) => void;
 }
 
 export const Content = (props: Props) => {

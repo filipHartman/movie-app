@@ -1,11 +1,11 @@
 import { HeaderTop } from './HeaderTop';
 import { Search } from './Search';
 import './Header.css';
-import { MovieData } from '../../../../shared/interfaces';
+import { Movie } from '../../../../shared/interfaces';
 import { MovieDetail } from './MovieDetail';
 
 interface Props {
-  currentMovie: MovieData | null;
+  currentMovie: Movie | null;
   resetCurrentMovie: () => void;
 }
 

@@ -37,5 +37,12 @@
     color: #ffffff;
     border: none;
     font-size: 1rem;
+}
 
+.sortContainer > select > option{
+    background-color: black;
+}
+
+.active {
+    border-bottom: 1px solid rgba(246, 82, 97, 1);
 }
