@@ -1,25 +1,22 @@
-import { MovieData } from '../../../../shared/interfaces';
+import { Movie } from '../../../../shared/interfaces';
 import './MovieDetail.css';
 
 interface Props {
-  movie: MovieData;
+  movie: Movie;
 }
 
 export const MovieDetail = (props: Props) => {
   const movie = props.movie;
   return (
     <section className='detailContainer'>
-      <div className='image'>{movie.imageUrl}</div>
       <div className='movieInfoContainer'>
         <div className='titleContainer'>
           <h2>{movie.title}</h2>
-          <span>{movie.rating}</span>
         </div>
         <div className='timeInfo'>
-          <span>{movie.releaseDate}</span>
-          <span className='length'>{movie.length} min</span>
+          <span className='length'>{movie.runtime} min</span>
         </div>
-        <p>{movie.description}</p>
+        <p>{movie.overview}</p>
       </div>
     </section>
   );

@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { MovieData } from '../../../../shared/interfaces';
+import { Movie } from '../../../../shared/interfaces';
 import { CardOptions } from './CardOptions';
 
 export const MovieCard = (props: {
-  movie: MovieData;
-  addCurrentMovie: (movie: MovieData) => void;
+  movie: Movie;
+  addCurrentMovie: (movie: Movie) => void;
 }) => {
   const [hover, setHover] = useState(false);
   const [showOptions, setShowOptions] = useState(false);
@@ -29,13 +29,17 @@ export const MovieCard = (props: {
           ></button>
         )
       ) : null}
-      <div className='cardImage'>{props.movie.imageUrl}</div>
+      <img
+        className='cardImage'
+        src={props.movie.poster_path}
+        alt={props.movie.title}
+      />
       <div className='cardFooter'>
         <div className='titleContainer'>
           <span>{props.movie.title}</span>
-          <span className='date'>{props.movie.releaseDate}</span>
+          <span className='date'>{props.movie.release_date}</span>
         </div>
-        <span className='description'>{props.movie.description}</span>
+        <span className='description'>{props.movie.overview}</span>
       </div>
     </div>
   );
